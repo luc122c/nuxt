@@ -38,7 +38,7 @@ test.describe('server page CSS with inlineStyles false', () => {
     let found = false
     for (let i = 0; i < count; i++) {
       const href = await styleLinks.nth(i).getAttribute('href')
-      if (!href) continue
+      if (!href) { continue }
       const cssRes = await page.request.get(href)
       const css = await cssRes.text()
       if (css.includes('.normal-shell')) {

@@ -1,7 +1,11 @@
 <template>
   <main class="normal-shell">
-    <h1 class="normal-title">Normal Page</h1>
-    <p class="normal-copy">This is a normal page.</p>
+    <h1 class="normal-title">
+      Normal Page
+    </h1>
+    <p class="normal-copy">
+      This is a normal page.
+    </p>
   </main>
 </template>
 

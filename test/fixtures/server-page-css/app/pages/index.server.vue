@@ -2,8 +2,12 @@
   <main class="nuxt-only-shell">
     <section class="nuxt-only-section">
       <div class="nuxt-only-card">
-        <h1 class="nuxt-only-title">Server Page</h1>
-        <p class="nuxt-only-copy">Scoped CSS should be delivered.</p>
+        <h1 class="nuxt-only-title">
+          Server Page
+        </h1>
+        <p class="nuxt-only-copy">
+          Scoped CSS should be delivered.
+        </p>
       </div>
     </section>
   </main>
