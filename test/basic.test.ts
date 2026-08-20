@@ -154,6 +154,14 @@ describe('pages', () => {
     // should inject runtime config
     expect(html).toContain('RuntimeConfig | testConfig: 123')
     expect(html).toContain('needsFallback:')
+    // should preserve null values in runtime config
+    expect(html).toContain('RuntimeConfig | needsNullFallback: null (object)')
+    // should preserve zero value in runtime config
+    expect(html).toContain('RuntimeConfig | needsZeroValue: 0 (number)')
+    // should preserve empty string in runtime config
+    expect(html).toContain('RuntimeConfig | needsEmptyString: "" (string)')
+    // should preserve nested config with mixed values
+    expect(html).toContain('RuntimeConfig | needsNestedConfig: {"name":"Test","val1":null,"val3":0,"val4":""}')
     // composables auto import
     expect(html).toContain('Composable | foo: auto imported from ~/composables/foo.ts')
     expect(html).toContain('Composable | bar: auto imported from ~/utils/useBar.ts')

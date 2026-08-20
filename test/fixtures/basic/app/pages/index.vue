@@ -5,6 +5,11 @@
     </Head>
     <h1>Hello Nuxt 3!</h1>
     <div>RuntimeConfig | testConfig: {{ config.public.testConfig }}</div>
+    <div>RuntimeConfig | needsFallback: {{ config.public.needsFallback }} ({{ typeof config.public.needsFallback }})</div>
+    <div>RuntimeConfig | needsNullFallback: {{ config.public.needsNullFallback }} ({{ typeof config.public.needsNullFallback }})</div>
+    <div>RuntimeConfig | needsZeroValue: {{ config.public.needsZeroValue }} ({{ typeof config.public.needsZeroValue }})</div>
+    <div>RuntimeConfig | needsEmptyString: "{{ config.public.needsEmptyString }}" ({{ typeof config.public.needsEmptyString }})</div>
+    <div>RuntimeConfig | needsNestedConfig: {{ JSON.stringify(config.public.needsNestedConfig) }}</div>
     <div>Composable | foo: {{ foo }}</div>
     <div>Composable | bar: {{ bar }}</div>
     <div>Composable | customFetch: {{ typeof customFetch }}</div>

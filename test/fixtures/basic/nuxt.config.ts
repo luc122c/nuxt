@@ -129,6 +129,16 @@ export default withMatrix({
   runtimeConfig: {
     public: {
       needsFallback: undefined,
+      needsNullFallback: null,
+      needsZeroValue: 0,
+      needsEmptyString: '',
+      needsNestedConfig: {
+        name: 'Test',
+        val1: null,
+        val2: undefined,
+        val3: 0,
+        val4: '',
+      },
     },
   },
   build: {
