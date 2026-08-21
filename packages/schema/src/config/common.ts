@@ -313,9 +313,9 @@ export default defineResolvers({
 
 function provideFallbackValues (obj: Record<string, any>) {
   for (const key in obj) {
-    if (typeof obj[key] === 'undefined' || obj[key] === null) {
+    if (typeof obj[key] === 'undefined') {
       obj[key] = ''
-    } else if (typeof obj[key] === 'object') {
+    } else if (typeof obj[key] === 'object' && obj[key] !== null) {
       provideFallbackValues(obj[key])
     }
   }
